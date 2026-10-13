@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Top 12 Competitor Profiles — Firework GTM</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎆</text></svg>">
+<style>
+:root{--font-anthropic-sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--font-anthropic-serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+--color-fg:#1c1d22;--color-fg-muted:#5f6370;--color-bg:#f6f6f4;--color-panel:#ffffff;--color-border-line:#e1e1dc;--color-bad:#c0392b;
+--cds-surface-popover:#f1f2f5;--cds-border:#d7d7d2;--cds-radius:10px;--cds-shadow-popover:0 6px 20px rgba(0,0,0,.12);--cds-text-secondary:#5f6370;
+--cds-font-size-caption:.8125rem;--cds-font-size-body:.9375rem;--cds-font-size-heading:1.0625rem;--cds-font-size-title:1.75rem;--cds-font-weight-medium:600;
+--cds-gap-xs:4px;--cds-gap-sm:8px;--cds-gap-md:14px;--cds-gap-lg:22px;--cds-gap-xl:40px;--cds-pad-xs:4px;--cds-pad-sm:8px;--cds-pad-md:14px;--cds-pad-lg:20px;--cds-dur-slow:.3s;
+--c0:#2f5fd0;--c1:#d07a2f}
+@media (prefers-color-scheme:dark){:root{--color-fg:#ececea;--color-fg-muted:#a3a6ae;--color-bg:#141518;--color-panel:#1d1f23;--color-border-line:#2f3238;--cds-surface-popover:#262930;--cds-border:#3a3d44;--cds-text-secondary:#a3a6ae;--c0:#6f97ff;--c1:#f0a25a}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:var(--cds-font-size-body);
+padding:calc(env(safe-area-inset-top,0px) + clamp(16px,4vw,48px)) clamp(16px,4vw,48px) calc(env(safe-area-inset-bottom,0px) + 48px)}
+a{color:inherit}
+.tp-foot-src{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin-top:8px}
+
+.tp { font-family: var(--font-anthropic-sans); color: var(--color-fg); max-width: 1200px; margin-inline: auto; display: grid; gap: var(--cds-gap-xl); }
+.tp h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-sm); line-height: 1.2; }
+.tp-lead { margin: 0; color: var(--color-fg-muted); max-width: 72ch; line-height: 1.5; }
+.tp-lead b { color: var(--color-fg); font-family: var(--font-anthropic-serif); font-weight: 400; font-variant-numeric: tabular-nums; }
+.tp h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+.tp-note { margin: 0 0 var(--cds-gap-md); color: var(--color-fg-muted); max-width: 72ch; line-height: 1.5; }
+.tp-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); position: relative; }
+.tp-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 4px; }
+.tp-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-md); line-height: 1.45; }
+.tp-two { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); }
+
+/* overview cards */
+.tp-grid { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); min-height: 200px; }
+.tp-co { display: flex; flex-direction: column; gap: 6px; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); }
+.tp-co.is-on { border-color: var(--color-fg); box-shadow: inset 0 0 0 1px var(--color-fg); }
+.tp-co-top { display: flex; align-items: baseline; gap: 8px; }
+.tp-co-rank { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.tp-co-name { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); line-height: 1.2; }
+.tp-co-meta { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.4; }
+.tp-co-feat { font-size: var(--cds-font-size-caption); line-height: 1.45; flex: 1; }
+.tp-co-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.tp-btn { font: inherit; font-size: var(--cds-font-size-caption); padding: 4px 10px; border-radius: 999px; border: 1px solid var(--color-border-line); background: none; color: var(--color-fg); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; }
+.tp-btn:hover, .tp-btn:focus-visible { border-color: var(--color-fg); }
+.tp-btn:focus-visible, .tp-chip:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.tp-btn.solid { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+
+/* charts */
+.tp-bars { display: grid; gap: 8px; min-height: 180px; }
+.tp-bar { display: grid; grid-template-columns: minmax(7rem, 11rem) 1fr; gap: var(--cds-gap-sm); align-items: center; }
+.tp-bar-l { font-size: var(--cds-font-size-caption); line-height: 1.3; }
+.tp-bar-l small { display: block; color: var(--color-fg-muted); }
+.tp-track { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.tp-fill { height: 16px; border-radius: 4px; min-width: 4px; }
+.tp-val { font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tp-foot { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-md) 0 0; line-height: 1.45; }
+
+/* profile */
+.tp-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--cds-gap-lg); }
+.tp-chip { font: inherit; font-size: var(--cds-font-size-caption); padding: 5px 12px; border-radius: 999px; border: 1px solid var(--color-border-line); background: none; color: var(--color-fg-muted); cursor: pointer; }
+.tp-chip:hover { color: var(--color-fg); border-color: var(--color-fg-muted); }
+.tp-chip.is-on { color: var(--color-bg); background: var(--color-fg); border-color: var(--color-fg); }
+.tp-ph { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: var(--cds-gap-md); }
+.tp-pname { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; line-height: 1.15; }
+.tp-url { font-size: var(--cds-font-size-caption); color: var(--color-fg); word-break: break-all; }
+.tp-facts { display: grid; gap: 1px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); background: var(--color-border-line); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; margin-bottom: var(--cds-gap-lg); }
+.tp-fact { background: var(--color-panel); padding: var(--cds-pad-sm) var(--cds-pad-md); }
+.tp-fact .k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0 0 2px; }
+.tp-fact .v { margin: 0; line-height: 1.35; }
+.tp-fact .s { margin: 2px 0 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.35; }
+.tp-pgrid { display: grid; gap: var(--cds-gap-lg); grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+.tp-k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0 0 4px; }
+.tp-quote { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); line-height: 1.25; margin: 0 0 var(--cds-gap-sm); }
+.tp-subq { margin: 0 0 var(--cds-gap-lg); color: var(--color-fg-muted); line-height: 1.5; }
+.tp-p { margin: 0 0 var(--cds-gap-lg); line-height: 1.55; }
+.tp-feat { margin: 0 0 var(--cds-gap-lg); line-height: 1.5; padding-left: var(--cds-pad-md); border-left: 3px solid var(--color-fg); }
+.tp-strats { list-style: none; margin: 0; padding: 0; counter-reset: s; display: grid; gap: 10px; }
+.tp-strats li { counter-increment: s; display: grid; grid-template-columns: 1.8rem 1fr; gap: 6px; line-height: 1.5; }
+.tp-strats li::before { content: counter(s); font-family: var(--font-anthropic-serif); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.tp-strats b { display: block; font-weight: var(--cds-font-weight-medium); }
+.tp-strats span { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); }
+.tp-lesson { margin: var(--cds-gap-lg) 0 0; padding: var(--cds-pad-md); border-radius: var(--cds-radius); background: var(--cds-surface-popover); border: 1px solid var(--color-border-line); }
+.tp-lesson p { margin: 0; line-height: 1.55; font-size: var(--cds-font-size-heading); }
+.tp-tacs { margin-top: var(--cds-gap-lg); display: grid; gap: var(--cds-gap-sm); grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
+.tp-tg h4 { margin: 0 0 6px; font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); }
+.tp-tg ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.tp-tg li { font-size: var(--cds-font-size-caption); display: flex; gap: 6px; align-items: flex-start; line-height: 1.35; }
+.tp-tg li.off { color: var(--color-fg-muted); opacity: .55; }
+.tp-dot { flex: none; width: 9px; height: 9px; border-radius: 50%; margin-top: 3px; border: 1.5px solid var(--color-border-line); }
+.tp-nav { display: flex; justify-content: space-between; margin-top: var(--cds-gap-lg); gap: 8px; }
+
+/* matrix */
+.tp-mxw { overflow-x: auto; min-height: 300px; }
+.tp-mx { display: grid; font-size: var(--cds-font-size-caption); min-width: 640px; }
+.tp-mx .c { display: flex; align-items: center; justify-content: center; height: 26px; border-bottom: 1px solid var(--color-border-line); font-variant-numeric: tabular-nums; }
+.tp-mx .rl { justify-content: flex-start; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 8px; }
+.tp-mx .th { height: auto; align-items: flex-end; padding: 4px 0 8px; }
+.tp-mx .th button { writing-mode: vertical-rl; transform: rotate(180deg); background: none; border: 0; font: inherit; color: var(--color-fg-muted); cursor: pointer; padding: 4px 2px; max-height: 9rem; }
+.tp-mx .th button.is-on { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.tp-mx .grp { grid-column: 1 / -1; padding: 10px 0 4px; color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); }
+.tp-mx .on { background: var(--cds-surface-popover); }
+.tp-mdot { width: 12px; height: 12px; border-radius: 50%; }
+.tp-mdot.off { width: 6px; height: 6px; background: var(--color-border-line); }
+
+.dash-skeleton{} .tp [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.tp [data-dash-source-state=empty] { color: transparent; }
+.tp-fail { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: inherit; }
+.tp-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+</style></head>
+<body>
+<div class="tp">
+  <header id="tp-top">
+    <h1>Top 12 competitors: who they are and how they sell</h1>
+    <p class="tp-lead">Detailed homepage analysis of the first <b data-source="tp_summary" data-field="companies" data-row="0">—</b> companies on our competitor list, based in <b data-source="tp_summary" data-field="countries" data-row="0">—</b> countries. Only <b data-source="tp_summary" data-field="with_revenue" data-row="0">—</b> of them have a revenue figure; the rest are private and don’t share numbers. Click any company to open its full profile.</p>
+  </header>
+
+  <section id="tp-overview">
+    <h2>The companies at a glance</h2>
+    <p class="tp-note">Location, revenue, how you start with them, and the one thing that makes each one different.</p>
+    <div class="tp-grid dash-skeleton" id="tp-cards" data-source="tp_profiles"></div>
+  </section>
+
+  <section id="tp-size">
+    <h2>Size and location</h2>
+    <p class="tp-note">Revenue numbers come from our competitor sheet and are mostly outside estimates, so treat them as rough sizes.</p>
+    <div class="tp-two">
+      <div class="tp-card">
+        <h3>Where they are based</h3>
+        <p class="tp-sub">Number of companies by headquarters country.</p>
+        <div class="tp-bars dash-skeleton" id="tp-loc" data-source="tp_by_country"></div>
+      </div>
+      <div class="tp-card">
+        <h3>Revenue, where known ($M)</h3>
+        <p class="tp-sub">Latest figure in our sheet. Companies without a figure are listed below the chart.</p>
+        <div class="tp-bars dash-skeleton" id="tp-rev" data-source="tp_profiles"></div>
+        <p class="tp-foot" id="tp-rev-none"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tp-profile">
+    <h2>Full profile</h2>
+    <p class="tp-note">Their headline, every messaging strategy we found on their page (in the order it appears), who they sell to, and the lesson for Firework.</p>
+    <div class="tp-card">
+      <div class="tp-chips" id="tp-chips" role="tablist" aria-label="Choose a company"></div>
+      <div class="tp-ph">
+        <span id="tp-p-flag" aria-hidden="true"></span>
+        <p class="tp-pname" data-source="tp_profiles" data-field="company" id="tp-p-company">—</p>
+        <a class="tp-url" id="tp-p-url" data-source="tp_profiles" data-field="url" target="_blank" rel="noopener noreferrer">—</a>
+      </div>
+      <div class="tp-facts">
+        <div class="tp-fact"><p class="k">Location</p><p class="v" data-source="tp_profiles" data-field="hq" id="tp-p-hq">—</p></div>
+        <div class="tp-fact"><p class="k">Revenue</p><p class="v" data-source="tp_profiles" data-field="revenue_text" id="tp-p-rev">—</p><p class="s" data-source="tp_profiles" data-field="revenue_basis" id="tp-p-basis">—</p></div>
+        <div class="tp-fact"><p class="k">Funding / ownership</p><p class="v" data-source="tp_profiles" data-field="funding" id="tp-p-fund">—</p></div>
+        <div class="tp-fact"><p class="k">How you start</p><p class="v" data-source="tp_profiles" data-field="sales_model" id="tp-p-sales">—</p><p class="s" data-source="tp_profiles" data-field="site_buttons" id="tp-p-btns">—</p></div>
+      </div>
+      <div class="tp-pgrid">
+        <div>
+          <p class="tp-k">Their headline</p>
+          <p class="tp-quote" data-source="tp_profiles" data-field="headline" id="tp-p-head">—</p>
+          <p class="tp-subq" data-source="tp_profiles" data-field="subheadline" id="tp-p-sub">—</p>
+          <p class="tp-k">Biggest feature</p>
+          <p class="tp-feat" data-source="tp_profiles" data-field="biggest_feature" id="tp-p-feat">—</p>
+          <p class="tp-k">Target customers</p>
+          <p class="tp-p" data-source="tp_profiles" data-field="target_customers" id="tp-p-target">—</p>
+        </div>
+        <div>
+          <p class="tp-k">Messaging strategy: what they put on their website, in page order</p>
+          <ol class="tp-strats" id="tp-p-strats" data-source="tp_profiles" data-field="strategies"></ol>
+        </div>
+      </div>
+      <div class="tp-lesson">
+        <p class="tp-k">Lesson for Firework: what makes them stand out</p>
+        <p data-source="tp_profiles" data-field="firework_lesson" id="tp-p-lesson">—</p>
+      </div>
+      <p class="tp-k" style="margin-top: var(--cds-gap-lg)">Tactics they use</p>
+      <div class="tp-tacs" id="tp-p-tacs" data-source="tp_profiles tp_tactics"></div>
+      <div class="tp-nav">
+        <button type="button" class="tp-btn" id="tp-prev">Previous company</button>
+        <button type="button" class="tp-btn" id="tp-next">Next company</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="tp-compare">
+    <h2>Tactics side by side</h2>
+    <p class="tp-note">Which messaging tactics each company uses on its homepage. The last column counts how many of these companies use it. Click a name to open its profile.</p>
+    <div class="tp-card">
+      <div class="tp-mxw dash-skeleton" id="tp-mx" data-source="tp_profiles tp_tactics tp_tactic_use"></div>
+    </div>
+  </section>
+</div>
+<p class="tp-foot-src">Source: Firework competitor research, homepage review October 2026. Revenue figures are mostly third-party estimates.</p>
+<script>
+window.TP_DATA = [{"rank": 1, "id": "scayle", "company": "SCAYLE STUDIOS (Zalando)", "short": "SCAYLE", "url": "https://www.scayle.com/studios/", "hq": "Hamburg, Germany (entering US)", "country": "Germany", "flag": "🇩🇪", "revenue_text": "Not broken out", "revenue_m": null, "revenue_basis": "SCAYLE segment: 23% ARR growth, 47% adj. EBITDA margin (reported)", "funding": "Owned by Zalando via ABOUT YOU acquisition (2025)", "sales_model": "Free trial + enterprise demo", "target_customers": "Enterprise fashion retailers and brands, especially those already on (or considering) the SCAYLE commerce platform. Creative and e-commerce content teams.", "biggest_feature": "An AI content engine built inside a full commerce platform, used by ABOUT YOU for most of its own production.", "headline": "SCAYLE STUDIOS: AI Content Engine", "subheadline": "Create on-model, PDP, campaign, social and video content in minutes, without waiting for casting, reshoots or production slots.", "site_buttons": "Get started for free (50 credits) · Book Enterprise Demo", "strategies": [{"title": "Try before you buy", "detail": "The first button is “Get started for free” with 50 free credits. “Book Enterprise Demo” sits next to it. The same offer is repeated at the bottom of the page."}, {"title": "Speed and cost numbers in the first screen", "detail": "Right under the headline: 80,000+ outfits created in 30 days, up to 90% lower production costs, more than 95% faster to market."}, {"title": "Made by people who know photo shoots", "detail": "“Built by fashion photo-studio teams” tells buyers this was made by experts, not a generic AI lab."}, {"title": "Customer logos and social proof", "detail": "Says it is already used by ABOUT YOU, s.Oliver and 100+ brands, with a scrolling logo row (ABOUT YOU, LeGer, EDITED and others)."}, {"title": "Show the product step by step", "detail": "Five simple steps with real screenshots: snap a product photo on your phone, auto-fill product data, style the look, cast your models, set the scene, create social content."}, {"title": "Sales results, not just savings", "detail": "A results block shows >90% cost savings, 200,000+ images live, +9.2% GMV and +5.1% add-to-basket."}, {"title": "A clear two-step story", "detail": "Step 1: cut production costs from day one. Step 2: turn content into more sales with lifestyle images and video."}, {"title": "Named leader quotes", "detail": "Quotes from ABOUT YOU’s Co-CEO Tarek Müller, LeGer founder Lena Gercke, and Goldner’s CEO."}, {"title": "Webinar and newsletter", "detail": "A webinar banner and a sign-up form for retail insights keep visitors who are not ready to buy."}], "strategy_count": 9, "firework_lesson": "It’s the only one that proves sales results (+9.2% GMV) AND lets you try it free. Firework should show at least one hard sales number, not only cost savings.", "logo_wall": 1, "press_ratings": 0, "security": 0, "hero_samples": 1, "named_cases": 0, "outcome_metrics": 1, "cost_speed": 1, "scale_stats": 1, "brand_fidelity": 0, "human_touch": 0, "guarantee": 0, "integrations": 0, "free_start": 1, "demo_only": 0, "ai_upfront": 1}, {"rank": 2, "id": "stylitics", "company": "Stylitics – AI Image Studio", "short": "Stylitics", "url": "https://stylitics.com/flat-lay-to-model/", "hq": "New York, US", "country": "United States", "flag": "🇺🇸", "revenue_text": "Undisclosed", "revenue_m": null, "revenue_basis": "—", "funding": "~$105M total funding; 150+ enterprise retailers", "sales_model": "Managed service (demo only)", "target_customers": "Large US retailers and brands: department stores, apparel, athletic, home, luxury. Buyers are e-commerce, marketing and product/tech teams, plus Heads of AI.", "biggest_feature": "A done-for-you image service with AI + human checks and an SLA: bad images are redone free or refunded.", "headline": "One Flat Lay. Thousands of On-Model Images.", "subheadline": "Converts your existing product photography into photorealistic on-model imagery: 15,000+ images per week, at 10–20% of the cost, with brand-safe quality control built in.", "site_buttons": "Talk to an Expert · Book a demo", "strategies": [{"title": "Lead with the result, not the technology", "detail": "The headline is a simple ratio: one flat lay in, thousands of model images out. “AI” only appears in a small tag above it."}, {"title": "Three numbers for three worries", "detail": "15,000+ images a week (scale), 10–20% of the cost (price), brand-safe quality control (risk)."}, {"title": "Images prove the claim", "detail": "The top image shows one pair of trousers in about 18 scenes, which quietly proves the product stays accurate."}, {"title": "Large logo wall", "detail": "“Trusted by 100s of the world’s leading brands & retailers” with a long row of logos like Belk, Bloomingdale’s and Aéropostale."}, {"title": "Turn a creative problem into a business problem", "detail": "“Your Photography Budget is a Production Problem” and “Your Flat Lays Are Costing You Conversions” make it about money and sales."}, {"title": "Product details that answer fashion worries", "detail": "Fabric-aware rendering (knit vs denim vs silk), tuck & drape logic, ghost mannequin to model."}, {"title": "Safety and process for big buyers", "detail": "AI + human QA on every image, PIM/DAM integration with automatic delivery, and an SLA: any image that misses quality or turnaround is redone free or refunded."}, {"title": "Show the full product range", "detail": "Seven tabs: flat lay to model, model diversity, colorway swaps, scene swaps, pose control, UGC-style content, AI retouching."}, {"title": "Honest, no-hype tone", "detail": "The form says: no hype, no long sales decks, just a real conversation."}], "strategy_count": 9, "firework_lesson": "Its SLA (redo or refund) and human QA make it feel risk-free for big retailers. Firework can stand out by offering a clear quality guarantee too.", "logo_wall": 1, "press_ratings": 0, "security": 0, "hero_samples": 1, "named_cases": 0, "outcome_metrics": 0, "cost_speed": 1, "scale_stats": 1, "brand_fidelity": 1, "human_touch": 1, "guarantee": 1, "integrations": 1, "free_start": 0, "demo_only": 1, "ai_upfront": 0}, {"rank": 3, "id": "flock", "company": "Flock AI (Lumesa)", "short": "Flock AI / Lumesa", "url": "https://www.lumesa.ai/", "hq": "New York, US", "country": "United States", "flag": "🇺🇸", "revenue_text": "Undisclosed", "revenue_m": null, "revenue_basis": "—", "funding": "$7.5M total ($6M seed led by Work-Bench, 2026)", "sales_model": "Managed service (demo only)", "target_customers": "Mid-size to large fashion, apparel, luxury and beauty brands, many on Shopify, Shopify Plus or BigCommerce. Includes $1B+ holding companies.", "biggest_feature": "An AI trained on each brand’s own look (“brand DNA”), plus virtual try-on and analytics that show which images sell.", "headline": "Our AI. Your Brand DNA. Infinite Possibilities.", "subheadline": "The managed AI visual imagery platform for fashion and retail. Trained on your brand. Scaled without a studio. White glove service at every step.", "site_buttons": "Request Demo", "strategies": [{"title": "Brand first", "detail": "The headline puts the customer’s brand at the center: the AI learns your brand DNA before it makes a single image."}, {"title": "White-glove partner", "detail": "Calls itself a managed platform with human oversight at every step; Lumesa runs the whole pipeline for you."}, {"title": "Press instead of customer logos", "detail": "“As seen on” quotes from Vogue, Forbes and WWD right under the hero."}, {"title": "Story-style case studies", "detail": "Anonymous but catchy: “First in Luxury Retail at This Scale. 3% Conversion Lift,” “Production Volume Doubled in Six Months,” “Their Marketing Team Didn’t Believe It Was AI.”"}, {"title": "More than image making", "detail": "Four capabilities: brand-trained visuals, AI models, virtual try-on, and visual analytics (A/B tests, cross-channel reports)."}, {"title": "Bold impact numbers", "detail": "10x faster production, 80% lower content costs, 20–30% uplift in conversion."}, {"title": "Fits your store", "detail": "Shopify, Shopify Plus, BigCommerce and custom API logos."}, {"title": "Event marketing", "detail": "A Shoptalk giveaway (win a Rimowa suitcase) and a Met Gala virtual try-on demo get attention."}], "strategy_count": 8, "firework_lesson": "It closes the loop: make images, test them, measure which sell. Firework could show analytics or A/B testing, not just image creation.", "logo_wall": 0, "press_ratings": 1, "security": 0, "hero_samples": 0, "named_cases": 0, "outcome_metrics": 1, "cost_speed": 1, "scale_stats": 0, "brand_fidelity": 1, "human_touch": 1, "guarantee": 0, "integrations": 1, "free_start": 0, "demo_only": 1, "ai_upfront": 1}, {"rank": 4, "id": "photoroom", "company": "Photoroom", "short": "Photoroom", "url": "https://www.photoroom.com/", "hq": "Paris, France (large US base)", "country": "France", "flag": "🇫🇷", "revenue_text": "~$94M ARR (2024)", "revenue_m": 94, "revenue_basis": "Third-party estimate (Sacra)", "funding": "$64M raised; $500M valuation (Feb 2024)", "sales_model": "Self-serve to enterprise", "target_customers": "Everyone who sells online: solo sellers, growing brands, marketplaces (Depop, Mercari), delivery apps (Wolt, DoorDash) and global enterprises (Decathlon).", "biggest_feature": "A mass-market tool (80M+ users) that has grown into enterprise, with an “Enterprise Guarantee”: pay only for images that pass your quality rules.", "headline": "Sell at first sight", "subheadline": "The future-ready product visual solution for e-commerce.", "site_buttons": "Start creating · Contact sales", "strategies": [{"title": "Talk about the sale, not the tool", "detail": "“Sell at first sight” doesn’t mention AI or photos. It’s about selling."}, {"title": "Scale as proof", "detail": "“Join 1M+ businesses” right under the hero, and “trusted by 80M+ users” later on."}, {"title": "Big-name logos", "detail": "Naver, Mercari, Depop, Printify, DoorDash, Rappi, Decathlon, Sorare."}, {"title": "Named stories with numbers", "detail": "Decathlon: 99% lower cost per image, 4x faster rollouts. Depop: 1M+ listings. Wolt: 140,000+ merchants in 27 countries. Palm Angels: capsule launched in four days."}, {"title": "A path for every customer size", "detail": "Three blocks (growing brands, scaling businesses, enterprise), each with its own button and a quote from a similar customer."}, {"title": "Answer the accuracy worry", "detail": "“Edits that stay true to the product,” a brand library that locks your rules, and blog posts on fixing inaccurate AI images."}, {"title": "Risk removal for enterprise", "detail": "Enterprise Guarantee: pay only for outputs that pass your quality criteria; others are redone or credited back."}, {"title": "No vendor lock-in", "detail": "Custom models and a REST API that adopts new AI models as they appear."}, {"title": "Security section", "detail": "SOC 2 Type 2, GDPR, trust center, built on GCP, AWS and Cloudflare, responsible AI audits."}, {"title": "Tools for buyers", "detail": "ROI calculator, industry reports, comparison pages, and an MCP connector for Claude."}], "strategy_count": 10, "firework_lesson": "Its “pay only for images that pass” guarantee plus three clear paths by company size. Firework should give each buyer type its own entry point.", "logo_wall": 1, "press_ratings": 0, "security": 1, "hero_samples": 0, "named_cases": 1, "outcome_metrics": 0, "cost_speed": 1, "scale_stats": 1, "brand_fidelity": 1, "human_touch": 0, "guarantee": 1, "integrations": 1, "free_start": 1, "demo_only": 0, "ai_upfront": 0}, {"rank": 5, "id": "botika", "company": "Botika", "short": "Botika", "url": "https://botika.com/", "hq": "Israel", "country": "Israel", "flag": "🇮🇱", "revenue_text": "Undisclosed", "revenue_m": null, "revenue_basis": "—", "funding": "$18M raised; 3,000+ brands; 9x revenue growth (reported)", "sales_model": "Self-serve + managed launch", "target_customers": "Small to mid-size fashion brands and fashion e-commerce teams (Forever 21, Jordache, Perry Ellis, La Redoute, Nil+Mon). Creative teams who want control.", "biggest_feature": "A “model agency” of 150+ AI models, plus a managed account that creates your first launch with you before you scale alone.", "headline": "AI fashion models trusted by world-class fashion brands", "subheadline": "Botika helps leading brands create authentic, on-brand imagery at scale, giving teams creative freedom, consistency and full control.", "site_buttons": "Get Started · Book a Call", "strategies": [{"title": "Models are the hero", "detail": "The headline and the top images are all about AI fashion models, like a fashion casting page."}, {"title": "Fashion logos right away", "detail": "“Top fashion creative teams choose Botika”: Forever 21, Jordache, La Redoute, Perry Ellis, Heliot Emil, Nil+Mon."}, {"title": "Easy promise", "detail": "“Shoot your collection. Without a single shoot.” Any flat lay, hanger or ghost mannequin photo goes in, on-model photos come out."}, {"title": "Answer garment worries", "detail": "“Prints stay aligned, logos stay placed, texture stays readable.”"}, {"title": "Casting language", "detail": "“Find the face of your brand”: 150+ AI models across body types, skin tones and markets."}, {"title": "Managed first launch", "detail": "A managed account pairs your brand with Botika’s AI creative team for your next launch. They make the first set with you, then you scale it yourself."}, {"title": "Named results", "detail": "Jordache –90% production costs, JUAN & ME 24 hours from sample to live (down from six weeks), Nil+Mon 4x higher conversion."}, {"title": "Scale numbers", "detail": "150+ models, 500,000+ images and videos a month, 3,000 brands, 4K delivery."}, {"title": "Inclusive and fast", "detail": "Sections on diversity, launching in days, and spending less."}, {"title": "Community", "detail": "A Creative Partner Program, podcast and blog."}], "strategy_count": 10, "firework_lesson": "The “we’ll do your first launch with you” offer sits between a free trial and a big contract. Firework could offer a guided first project.", "logo_wall": 1, "press_ratings": 0, "security": 0, "hero_samples": 1, "named_cases": 1, "outcome_metrics": 1, "cost_speed": 1, "scale_stats": 1, "brand_fidelity": 1, "human_touch": 1, "guarantee": 0, "integrations": 0, "free_start": 1, "demo_only": 0, "ai_upfront": 1}, {"rank": 6, "id": "claid", "company": "Claid.ai (Let's Enhance)", "short": "Claid", "url": "https://claid.ai/", "hq": "California, US", "country": "United States", "flag": "🇺🇸", "revenue_text": "Undisclosed", "revenue_m": null, "revenue_basis": "—", "funding": "$3M seed", "sales_model": "Self-serve + API", "target_customers": "E-commerce sellers, marketplaces and platforms that process lots of seller photos (Printify, Rappi, Mixtiles), plus fashion, food, auto and real estate.", "biggest_feature": "A specialist that only does product photography, with an API built for marketplaces processing millions of images.", "headline": "AI product and fashion photos that actually look real", "subheadline": "Realistic backgrounds with natural lighting and shadows. Diverse AI fashion models. Every texture, label, and fine detail preserved. Native 4K.", "site_buttons": "Start creating free · Talk to sales", "strategies": [{"title": "Realism is the headline", "detail": "Goes straight at the biggest doubt about AI images: will they look real?"}, {"title": "Detail promises", "detail": "Natural light and shadows, labels and fine details preserved, native 4K."}, {"title": "Specialist argument", "detail": "“We only do product photography,” so it says it performs better than alternatives with the same photos."}, {"title": "Experience and scale", "detail": "Building generative AI since 2018: 10k+ customers, 200M+ images edited, 8+ years."}, {"title": "All-in-one studio", "detail": "AI photoshoot, AI fashion models, AI video, background removal, upscaling, light fixing, plus 10+ more tools."}, {"title": "Named API customers", "detail": "Printify saved 42% editing time and 28% on managing sellers; Rappi grew restaurants by 33%; quotes from Mixtiles and Caranty."}, {"title": "Business benefits", "detail": "Better conversions, onboarding sellers faster with 80% lower editing costs, editing thousands of images in brand style."}, {"title": "FAQ for search", "detail": "A long FAQ answers common questions like “What’s the best AI tool for product photos?”"}, {"title": "Relaxed free-trial close", "detail": "“Still not sure? Just try it already. It’s free.”"}, {"title": "Head-to-head page", "detail": "A “Claid vs Photoroom” comparison page in the footer."}], "strategy_count": 10, "firework_lesson": "It owns one simple promise: “photos that actually look real.” Firework should pick one clear promise and repeat it.", "logo_wall": 0, "press_ratings": 0, "security": 0, "hero_samples": 1, "named_cases": 1, "outcome_metrics": 1, "cost_speed": 1, "scale_stats": 1, "brand_fidelity": 1, "human_touch": 0, "guarantee": 0, "integrations": 1, "free_start": 1, "demo_only": 0, "ai_upfront": 1}, {"rank": 7, "id": "pixelcut", "company": "Pixelcut", "short": "Pixelcut", "url": "https://www.pixelcut.ai/", "hq": "Oakland, CA, US", "country": "United States", "flag": "🇺🇸", "revenue_text": "~$19.8M gross spend", "revenue_m": 19.8, "revenue_basis": "Third-party estimate (consumer app spending, not company revenue)", "funding": "~$250K (AI Grant)", "sales_model": "Consumer app (free start)", "target_customers": "Small sellers, creators and small businesses on mobile and web; individual creatives inside big companies (Nike, Adidas, Sephora).", "biggest_feature": "A huge consumer app (70M+ users) with an AI “Creative Agent” that runs famous AI models for you.", "headline": "Create Studio-Quality Visuals with AI", "subheadline": "Join 70 million sellers making images and videos with AI.", "site_buttons": "Start creating · Download App", "strategies": [{"title": "Size as the main proof", "detail": "“Join 70 million sellers” right under the headline, repeated as “70M+ creators, brands, and businesses” near the end."}, {"title": "Big logos, careful wording", "detail": "“Trusted by creatives at” Adidas, Airbnb, Apple, H&M, Google, Gucci, Nike, Sephora, Chanel, Starbucks, Toyota. This means employees use it, not company contracts."}, {"title": "Borrow AI excitement", "detail": "Its Creative Agent plans and runs tasks using well-known models like Nano Banana Pro and Sora 2."}, {"title": "Workflows, not just tools", "detail": "Product showcase, AI UGC ads (talking videos), and consistent personas."}, {"title": "Before/after proof", "detail": "Background removal, upscaling (up to 16x), expand, retouching, shadows and batch editing, all shown with before/after images."}, {"title": "Brand consistency", "detail": "AI actors and product photos with the same character across every image and video."}, {"title": "Everyday reviews", "detail": "Short app-store-style reviews from small business owners (“My favorite app”, “Best background remover”)."}, {"title": "Free and mobile-first", "detail": "“Start creating for free,” iOS and Android apps, 14 languages, plus an API and a Claude integration."}], "strategy_count": 8, "firework_lesson": "It shows that “easy and free” wins the mass market. Firework’s page should feel simple enough that a non-expert gets it in five seconds.", "logo_wall": 1, "press_ratings": 1, "security": 0, "hero_samples": 1, "named_cases": 0, "outcome_metrics": 0, "cost_speed": 0, "scale_stats": 1, "brand_fidelity": 0, "human_touch": 0, "guarantee": 0, "integrations": 1, "free_start": 1, "demo_only": 0, "ai_upfront": 1}, {"rank": 8, "id": "flair", "company": "Flair.ai", "short": "Flair", "url": "https://flair.ai/", "hq": "San Francisco, US", "country": "United States", "flag": "🇺🇸", "revenue_text": "Undisclosed", "revenue_m": null, "revenue_basis": "—", "funding": "~$5M seed (CRV)", "sales_model": "Self-serve design tool", "target_customers": "D2C and SMB brands and their creative teams (beauty, CPG, jewelry, fashion, furniture), plus some large brands (Shein, Amazon, Samsonite).", "biggest_feature": "A drag-and-drop design canvas (like Canva/Figma) for product photoshoots, with real-time team collaboration.", "headline": "The AI design tool for product photoshoots", "subheadline": "Build stunning AI product content with your team in real-time.", "site_buttons": "Get Started – It’s Free · Book a Demo", "strategies": [{"title": "A tool for designers", "detail": "Calls itself a design tool, not an AI generator, so creative teams feel in control."}, {"title": "Show the product screen", "detail": "The hero is the actual editor and a demo video, not just finished images."}, {"title": "Logo row", "detail": "“Used by brands of all sizes and industries”: Swim Outlet, Shein, Bonobos, BCG, Samsonite, JLo Beauty, Amazon."}, {"title": "On-brand content", "detail": "“Create content that matches your brand rules and aesthetic” across on-model photos, video, ads and product photos."}, {"title": "Hands-on creation", "detail": "Drag-and-drop canvas with props, and reusable templates to test designs."}, {"title": "New fashion feature", "detail": "Fashion photoshoots with “patterns and logos preserved,” marked as a new feature."}, {"title": "Custom AI humans", "detail": "Build your own AI human models by hair color, body type and more."}, {"title": "Direct comparison", "detail": "A table comparing Flair with Pebblely, Botika and Claid on features like custom models, video, ads, team collaboration and API."}], "strategy_count": 8, "firework_lesson": "It’s the only one comparing itself to named competitors on the homepage. Firework could use a comparison table, but only if we clearly win on most rows.", "logo_wall": 1, "press_ratings": 0, "security": 0, "hero_samples": 1, "named_cases": 0, "outcome_metrics": 0, "cost_speed": 0, "scale_stats": 0, "brand_fidelity": 1, "human_touch": 0, "guarantee": 0, "integrations": 1, "free_start": 1, "demo_only": 0, "ai_upfront": 1}, {"rank": 9, "id": "lalaland", "company": "Lalaland.ai (Browzwear)", "short": "Lalaland / Browzwear", "url": "https://browzwear.com/", "hq": "Amsterdam / Singapore", "country": "Netherlands / Singapore", "flag": "🇳🇱🇸🇬", "revenue_text": "Undisclosed", "revenue_m": null, "revenue_basis": "—", "funding": "Acquired by Browzwear (2025)", "sales_model": "Enterprise software (plans + demo)", "target_customers": "Apparel brands, manufacturers and retailers’ design and product development teams (Nike, Walmart, Target, Puma, Under Armour, VF), plus universities and freelance creators.", "biggest_feature": "A 3D “digital twin” of each garment, made before any physical sample, that also produces AI model and e-commerce images.", "headline": "From vision to reality, driven by AI & 3D", "subheadline": "Speed up time-to-market and boost revenue with our digital platform that helps fashion brands design, sell, and make products in one connected workflow.", "site_buttons": "Explore Plans · Book a Demo", "strategies": [{"title": "The industry standard", "detail": "“The global standard” and “Powering the digital fashion industry”, with 1,000+ companies, 10M+ digital garments, 30+ countries."}, {"title": "Big-brand logos", "detail": "“Trusted by the best”: Otto, Walmart, Bonprix, Odlo, Nike, Target, Under Armour, VF, Puma."}, {"title": "Whole workflow, not one step", "detail": "“Most 3D tools stop at design.” Four steps: design the digital twin, check fit with AI models, approve together, go to market with e-commerce assets."}, {"title": "Factory-side numbers", "detail": "50–80% fewer physical samples, 95% first-time-right samples, 2x faster development, 35% lower cost, 80% less fabric waste."}, {"title": "Speed promise", "detail": "“From idea to approval in hours, not months.”"}, {"title": "Video testimonials with one result each", "detail": "Odlo: 70% lower initial investment. Paladin: timelines cut from 4 to 2 months. Bonprix: some products go to production with zero samples."}, {"title": "Open pricing", "detail": "“Explore Plans” sits next to “Book a Demo”, for enterprise teams, brands and independent creators."}, {"title": "Learning and trust content", "detail": "Browzwear University, a digital maturity e-book, sustainability page, and a Chinese-language site."}], "strategy_count": 8, "firework_lesson": "It reaches brands before the product even exists. Firework could show it can create images from early samples or 3D files, so brands launch sooner.", "logo_wall": 1, "press_ratings": 0, "security": 0, "hero_samples": 1, "named_cases": 1, "outcome_metrics": 0, "cost_speed": 1, "scale_stats": 1, "brand_fidelity": 1, "human_touch": 0, "guarantee": 0, "integrations": 1, "free_start": 0, "demo_only": 0, "ai_upfront": 1}, {"rank": 10, "id": "vue", "company": "Vue.ai (Mad Street Den)", "short": "Vue.ai", "url": "https://vue.ai/", "hq": "Chennai, India (US presence)", "country": "India", "flag": "🇮🇳", "revenue_text": "~$28M", "revenue_m": 28, "revenue_basis": "Third-party estimate", "funding": "Acquired by M2P Fintech (2025)", "sales_model": "Enterprise platform (demo only)", "target_customers": "Large enterprises in retail/e-commerce, banking, insurance, logistics and healthcare. Buyers are business and digital transformation leaders.", "biggest_feature": "A 30:60:90 promise: pilot live by day 30, ROI proof by day 60, scale by day 90, with walk-away clauses.", "headline": "The Only AI Platform You Will Ever Need", "subheadline": "Uncomplicate AI transformation: at a fraction of the cost, at 5X the speed. Get started today.", "site_buttons": "Request Demo", "strategies": [{"title": "One platform for everything", "detail": "Positions itself as a single AI orchestrator for data, models, workflows and AI agents, across many industries."}, {"title": "Speed over big plans", "detail": "“Say no to 3-year AI transformation plans. Go-live today.”"}, {"title": "A clear timeline promise", "detail": "30:60:90: Day 30 pilot live, Day 60 ROI proof, Day 90 scale."}, {"title": "Accountability", "detail": "“Committed outcomes. Walk-away clauses.” Quarterly reports to sponsors."}, {"title": "Strategic partner claim", "detail": "“96% of our customers see us as their strategic partner.”"}, {"title": "Enterprise logos", "detail": "Microsoft, Google Cloud, Diesel, thredUP, Tata Motors, HDFC Bank, Dubai CommerCity."}, {"title": "CEO quotes", "detail": "Founders and CEOs from Zenyum, thredUP, TDL and Dubai CommerCity."}, {"title": "Partnerships and press", "detail": "Google Cloud, Meta (inclusive AI models in ads), Decimal, SimpliFI, Moative."}, {"title": "Fashion is one small part", "detail": "Automated on-model imagery and virtual dressing rooms appear only as rows in a big use-case table."}], "strategy_count": 9, "firework_lesson": "It turns “trust us” into a dated plan with a walk-away option. Firework could offer a 30-day pilot with a clear success goal.", "logo_wall": 1, "press_ratings": 1, "security": 1, "hero_samples": 0, "named_cases": 0, "outcome_metrics": 0, "cost_speed": 1, "scale_stats": 0, "brand_fidelity": 0, "human_touch": 1, "guarantee": 1, "integrations": 1, "free_start": 0, "demo_only": 1, "ai_upfront": 1}, {"rank": 11, "id": "heygen", "company": "HeyGen", "short": "HeyGen", "url": "https://www.heygen.com/", "hq": "Los Angeles, US", "country": "United States", "flag": "🇺🇸", "revenue_text": "$200M+ ARR (Jun 2026)", "revenue_m": 200, "revenue_basis": "Company-reported", "funding": "$74M raised", "sales_model": "Self-serve to enterprise", "target_customers": "Creators, marketers, sales, training (L&D) and e-learning teams, agencies, and global enterprises (85% of the Fortune 100). Also developers through its API.", "biggest_feature": "Personal AI avatars of real people (“starring you”), with ID checks on every avatar and video translation into 175+ languages.", "headline": "AI videos starring you, made in minutes", "subheadline": "Be your best self, every time.", "site_buttons": "Get started for free · Contact sales", "strategies": [{"title": "Personal, simple headline", "detail": "“AI videos starring you, made in minutes”: the promise is about you, not the technology."}, {"title": "Show real use cases first", "detail": "Sample videos right under the hero for social content, online courses, legal, finance and real estate."}, {"title": "Ratings and awards up top", "detail": "4.8/5 from 1,000+ G2 reviews, G2 #1 most realistic avatars, Forbes AI 50, and a big logo wall “trusted by over 1,000,000 developers and leading companies.”"}, {"title": "Repeat proof and the free button", "detail": "After almost every section: “Rated #1 most realistic on G2 · Trusted by 85% of the Fortune 100” followed by “Get started for free.”"}, {"title": "Realism and consistency", "detail": "“The most lifelike avatars in AI video”: same face across every video, multiple camera angles, lip-sync in 175+ languages."}, {"title": "Research to prove real technology", "detail": "A published research report on its Avatar V model, with original vs generated footage side by side."}, {"title": "Easy tools for every input", "detail": "Video Agent (idea to video from one prompt), AI Studio (edit like a document), translation, plus text, image, audio and PPT/PDF to video."}, {"title": "Face the trust problem head-on", "detail": "“AI video has a trust problem.” ID verification for every custom avatar, ML + human moderation, and badges for GDPR, SOC 2, CCPA, EU AI Act."}, {"title": "Growth news", "detail": "$200M ARR in eight months, 30M+ users in 196 countries, partnerships like ChatGPT and Seedance 2.0."}, {"title": "Community and customer proof", "detail": "Meetups around the world, and Coursera’s CTO: 40% more watch time, 25% higher course completion. A long FAQ closes the page."}], "strategy_count": 10, "firework_lesson": "It names its category’s biggest fear (“AI video has a trust problem”) and answers it with ID checks and moderation. Firework should name and answer our biggest fear: “Will AI change my product?”", "logo_wall": 1, "press_ratings": 1, "security": 1, "hero_samples": 1, "named_cases": 1, "outcome_metrics": 1, "cost_speed": 0, "scale_stats": 1, "brand_fidelity": 1, "human_touch": 0, "guarantee": 0, "integrations": 1, "free_start": 1, "demo_only": 0, "ai_upfront": 1}, {"rank": 12, "id": "creatify", "company": "Creatify", "short": "Creatify", "url": "https://creatify.ai/", "hq": "Mountain View, CA, US", "country": "United States", "flag": "🇺🇸", "revenue_text": "~$9M ARR (May 2025); >$10M later", "revenue_m": 9, "revenue_basis": "Third-party estimates", "funding": "$24M raised (per its website: WndrCo, Kindred Ventures, NFDG, Comcast Ventures)", "sales_model": "Self-serve + enterprise demo", "target_customers": "Performance marketers at e-commerce and DTC brands, apps, games and agencies who run paid ads on Meta, TikTok, YouTube, Snap and Amazon.", "biggest_feature": "A full ad loop in one place: find what’s working, create ads, launch them, then track ROAS and CTR to see which to keep.", "headline": "AI Ads that win.", "subheadline": "AI-generated video ads that actually convert, at the scale your business needs. From 10 ads a month to 10,000.", "site_buttons": "Create your first ad free (no credit card) · Book demo", "strategies": [{"title": "Short, confident promise", "detail": "“AI Ads that win.” The goal is winning ads, not just making videos."}, {"title": "Scale in one line", "detail": "“From 10 ads a month to 10,000.”"}, {"title": "Zero-risk start", "detail": "“Create your first ad free,” no credit card required, rated 4.8/5 on G2, all in the first screen."}, {"title": "A wall of real-looking samples", "detail": "A scrolling carousel of ads (UGC, hair clips, glasses, luggage, denim, pet food, skincare), each openly labeled “AI GENERATED.”"}, {"title": "Platform-size numbers", "detail": "Supporting 18,000+ brands and agencies; 30M+ ads analyzed, 15M+ ads created, $1B+ in ad spend."}, {"title": "The whole job, step by step", "detail": "Four steps: Discover (see what converts in your industry), Create (many formats and variations), Launch (push live to social channels with A/B tests), Optimize (spend, ROAS and CTR per ad)."}, {"title": "Many tools, one platform", "detail": "URL to video, Creative Agent, avatars, Ad Flow editor, Performance Agent, model playground, image ads, ad cloner."}, {"title": "Results in marketer language", "detail": "2.7x more leads, 1.7x higher ROI, 90% lower production cost (footnoted as partly industry benchmarks)."}, {"title": "Case grid with two numbers each", "detail": "Designrr 45% lower CPA and 73% better ROAS; 1More 47.6% higher CTR; Tec-Do 3x ROI; Alibaba 200k+ ads; Vitals 1,000+ creatives a month."}, {"title": "Stacked trust section", "detail": "40+ G2 badges, Product Hunt #1, press (Fast Company, Bloomberg, TechCrunch), SOC 2 Type II, ad-platform logos, and $24M from named investors."}], "strategy_count": 10, "firework_lesson": "It sells the result marketers are judged on (ROAS, CPA, CTR) and tracks it inside the product. Firework should show results in the numbers our buyer reports to their boss.", "logo_wall": 1, "press_ratings": 1, "security": 1, "hero_samples": 1, "named_cases": 1, "outcome_metrics": 1, "cost_speed": 1, "scale_stats": 1, "brand_fidelity": 0, "human_touch": 0, "guarantee": 0, "integrations": 1, "free_start": 1, "demo_only": 0, "ai_upfront": 1}];
+window.TP_TACTICS = [{"tactic": "logo_wall", "label": "Shows customer logos", "group": "Build trust"}, {"tactic": "press_ratings", "label": "Press, awards or review scores", "group": "Build trust"}, {"tactic": "security", "label": "Security / privacy badges", "group": "Build trust"}, {"tactic": "hero_samples", "label": "Top of page is mostly sample images or video", "group": "Prove it works"}, {"tactic": "named_cases", "label": "Real customer stories with results", "group": "Prove it works"}, {"tactic": "outcome_metrics", "label": "Sales results (conversion, revenue)", "group": "Prove it works"}, {"tactic": "cost_speed", "label": "Cost or time savings numbers", "group": "Prove it works"}, {"tactic": "scale_stats", "label": "How big they are (users, images made)", "group": "Prove it works"}, {"tactic": "brand_fidelity", "label": "Promises the product looks right", "group": "Lower the risk"}, {"tactic": "human_touch", "label": "People check the images or do the work", "group": "Lower the risk"}, {"tactic": "guarantee", "label": "Quality guarantee (redo or refund)", "group": "Lower the risk"}, {"tactic": "integrations", "label": "Connects to your tools (Shopify, API)", "group": "Lower the risk"}, {"tactic": "free_start", "label": "Free trial button", "group": "How to start"}, {"tactic": "demo_only", "label": "Only option is “Book a demo”", "group": "How to start"}, {"tactic": "ai_upfront", "label": "Says “AI” in the main headline", "group": "How to start"}];
+(function(){
+  const store = { tp_profiles: window.TP_DATA, tp_tactics: window.TP_TACTICS };
+  const calcs = {}; const subs = [];
+  const cs = getComputedStyle(document.documentElement);
+  window.dash = {
+    colors: ['var(--c0)','var(--c1)'],
+    calc: (id, o) => { calcs[id] = o; },
+    data: (id) => {
+      if (store[id]) return { status: 'ok', data: store[id] };
+      const c = calcs[id]; if (!c) return { status: 'missing', data: [] };
+      return { status: 'ok', data: c.fn(...c.inputs.map(i => window.dash.data(i).data)) };
+    },
+    onData: (fn) => { subs.push(fn); fn(); },
+    setLink: (n) => { try { history.replaceState(null, '', '#' + n); } catch (e) {} }
+  };
+  window.d3 = {
+    max: (a, f) => a.length ? Math.max(...a.map(f)) : undefined,
+    format: () => (v) => Number(v).toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+  };
+  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(() => subs.forEach(f => f()), 150); });
+})();
+</script>
+<script>
+dash.calc('tp_summary', {
+  inputs: ['tp_profiles'],
+  title: 'Top 10 summary counts',
+  description: 'Number of companies, distinct HQ countries, and companies with a revenue figure.',
+  fn: (tp_profiles) => [{
+    companies: tp_profiles.length,
+    countries: new Set(tp_profiles.map(p => p.country)).size,
+    with_revenue: tp_profiles.filter(p => p.revenue_m !== null && p.revenue_m !== '' && p.revenue_m !== undefined).length
+  }]
+});
+dash.calc('tp_by_country', {
+  inputs: ['tp_profiles'],
+  title: 'Companies by HQ country',
+  description: 'Count of the top 10 companies per headquarters country.',
+  fn: (tp_profiles) => {
+    const m = new Map();
+    tp_profiles.forEach(p => { const k = p.country; if (!m.has(k)) m.set(k, { country: k, flag: p.flag, companies: 0, names: [] }); const r = m.get(k); r.companies += 1; r.names.push(p.short); });
+    return [...m.values()].map(r => ({ country: r.country, flag: r.flag, companies: r.companies, names: r.names.join(', ') })).sort((a, b) => b.companies - a.companies);
+  }
+});
+dash.calc('tp_tactic_use', {
+  inputs: ['tp_profiles', 'tp_tactics'],
+  title: 'Tactic use across top 10',
+  description: 'How many of the top 10 companies use each messaging tactic.',
+  fn: (tp_profiles, tp_tactics) => tp_tactics.map(t => ({ tactic: t.tactic, label: t.label, companies: tp_profiles.filter(p => Number(p[t.tactic]) === 1).length }))
+});
+
+window.tpState = window.tpState || { id: 'scayle' };
+(function () {
+  const S = window.tpState;
+  const $ = (id) => document.getElementById(id);
+  const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+  const bad = (st) => ['error', 'connect', 'declined', 'missing'].includes(st);
+  function wait(box, st) { if (bad(st)) { box.classList.remove('dash-skeleton'); box.replaceChildren(el('div', 'tp-fail', 'Failed to load')); } else box.classList.add('dash-skeleton'); }
+  function open(id, scroll) { S.id = id; render(); if (scroll) { const p = $('tp-profile'); p.scrollIntoView({ behavior: 'smooth', block: 'start' }); dash.setLink('tp-profile'); } }
+  const fmtM = (v) => '$' + d3.format(',.1f')(Number(v)) + 'M';
+
+  function cards(P) {
+    const box = $('tp-cards');
+    if (P.status !== 'ok') { wait(box, P.status); return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    P.data.forEach(p => {
+      const c = el('article', 'tp-co' + (S.id === p.id ? ' is-on' : ''));
+      const top = el('div', 'tp-co-top'); top.appendChild(el('span', 'tp-co-rank', '#' + p.rank)); top.appendChild(el('span', 'tp-co-name', p.flag + ' ' + p.short)); c.appendChild(top);
+      c.appendChild(el('div', 'tp-co-meta', p.hq));
+      c.appendChild(el('div', 'tp-co-meta', 'Revenue: ' + p.revenue_text + '  ·  ' + p.sales_model));
+      c.appendChild(el('div', 'tp-co-feat', p.biggest_feature));
+      const a = el('div', 'tp-co-actions');
+      const b = el('button', 'tp-btn solid', 'See full profile'); b.type = 'button'; b.addEventListener('click', () => open(p.id, true)); a.appendChild(b);
+      const l = el('a', 'tp-btn', 'Visit website'); l.setAttribute('href', p.url); l.setAttribute('target', '_blank'); l.setAttribute('rel', 'noopener noreferrer'); a.appendChild(l);
+      c.appendChild(a); box.appendChild(c);
+    });
+  }
+
+  function loc(C) {
+    const box = $('tp-loc');
+    if (C.status !== 'ok') { wait(box, C.status); return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    const max = d3.max(C.data, r => r.companies) || 1;
+    C.data.forEach(r => {
+      const row = el('div', 'tp-bar');
+      const l = el('div', 'tp-bar-l', r.flag + ' ' + r.country); l.appendChild(el('small', null, r.names)); row.appendChild(l);
+      const tr = el('div', 'tp-track'); const f = el('span', 'tp-fill'); f.style.width = (r.companies / max * 72) + '%'; f.style.background = dash.colors[0]; tr.appendChild(f);
+      tr.appendChild(el('span', 'tp-val', String(r.companies))); row.appendChild(tr); box.appendChild(row);
+    });
+  }
+
+  function rev(P) {
+    const box = $('tp-rev'), none = $('tp-rev-none');
+    if (P.status !== 'ok') { wait(box, P.status); none.textContent = ''; return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    const has = P.data.filter(p => p.revenue_m !== null && p.revenue_m !== undefined && p.revenue_m !== '').sort((a, b) => b.revenue_m - a.revenue_m);
+    const max = d3.max(has, p => Number(p.revenue_m)) || 1;
+    has.forEach(p => {
+      const row = el('div', 'tp-bar');
+      const l = el('div', 'tp-bar-l', p.flag + ' ' + p.short); l.appendChild(el('small', null, p.revenue_basis)); row.appendChild(l);
+      const tr = el('div', 'tp-track'); const f = el('span', 'tp-fill'); f.style.width = (Number(p.revenue_m) / max * 70) + '%'; f.style.background = dash.colors[1]; tr.appendChild(f);
+      tr.appendChild(el('span', 'tp-val', fmtM(p.revenue_m))); row.appendChild(tr); box.appendChild(row);
+    });
+    const no = P.data.filter(p => !has.includes(p)).map(p => p.short + ' (' + p.revenue_text.toLowerCase() + ')');
+    none.textContent = 'No revenue figure: ' + no.join(', ') + '.';
+  }
+
+  function chips(P) {
+    const box = $('tp-chips'); box.replaceChildren();
+    if (P.status !== 'ok') return;
+    P.data.forEach(p => { const b = el('button', 'tp-chip' + (S.id === p.id ? ' is-on' : ''), p.short); b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', S.id === p.id ? 'true' : 'false'); b.addEventListener('click', () => open(p.id, false)); box.appendChild(b); });
+  }
+
+  function profile(P, T) {
+    const map = { 'tp-p-company': 'company', 'tp-p-url': 'url', 'tp-p-hq': 'hq', 'tp-p-rev': 'revenue_text', 'tp-p-basis': 'revenue_basis', 'tp-p-fund': 'funding', 'tp-p-sales': 'sales_model', 'tp-p-btns': 'site_buttons', 'tp-p-head': 'headline', 'tp-p-sub': 'subheadline', 'tp-p-feat': 'biggest_feature', 'tp-p-target': 'target_customers', 'tp-p-lesson': 'firework_lesson' };
+    const ol = $('tp-p-strats'), tg = $('tp-p-tacs');
+    if (P.status !== 'ok') { Object.keys(map).forEach(k => { $(k).textContent = '—'; }); ol.replaceChildren(); tg.replaceChildren(); return; }
+    const p = P.data.find(r => r.id === S.id) || P.data[0];
+    Object.entries(map).forEach(([k, f]) => { const e = $(k); e.setAttribute('data-where', 'id=' + p.id); e.textContent = p[f]; });
+    $('tp-p-url').setAttribute('href', p.url);
+    $('tp-p-flag').textContent = p.flag;
+    $('tp-p-head').textContent = '“' + p.headline + '”';
+    ol.setAttribute('data-where', 'id=' + p.id); ol.replaceChildren();
+    let strats = p.strategies;
+    if (typeof strats === 'string') { try { strats = JSON.parse(strats); } catch (e) { strats = []; } }
+    if (!Array.isArray(strats)) strats = [];
+    strats.forEach(s => { const li = el('li'); const d = el('div'); d.appendChild(el('b', null, s.title)); d.appendChild(el('span', null, s.detail)); li.appendChild(d); ol.appendChild(li); });
+    tg.replaceChildren();
+    if (T.status === 'ok') {
+      const groups = [...new Set(T.data.map(t => t.group))];
+      groups.forEach(g => {
+        const w = el('div', 'tp-tg'); w.appendChild(el('h4', null, g)); const ul = el('ul');
+        T.data.filter(t => t.group === g).forEach(t => { const on = Number(p[t.tactic]) === 1; const li = el('li', on ? '' : 'off'); const d = el('span', 'tp-dot'); if (on) { d.style.background = dash.colors[0]; d.style.borderColor = dash.colors[0]; } li.appendChild(d); li.appendChild(el('span', null, t.label + (on ? '' : ' (not used)'))); ul.appendChild(li); });
+        w.appendChild(ul); tg.appendChild(w);
+      });
+    }
+    const i = P.data.findIndex(r => r.id === p.id);
+    const prev = P.data[(i - 1 + P.data.length) % P.data.length], next = P.data[(i + 1) % P.data.length];
+    $('tp-prev').textContent = 'Previous: ' + prev.short; $('tp-next').textContent = 'Next: ' + next.short;
+    $('tp-prev').onclick = () => open(prev.id, false); $('tp-next').onclick = () => open(next.id, false);
+  }
+
+  function matrix(P, T, U) {
+    const box = $('tp-mx');
+    if (P.status !== 'ok' || T.status !== 'ok' || U.status !== 'ok') { wait(box, [P, T, U].find(x => x.status !== 'ok').status); return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    const g = el('div', 'tp-mx');
+    g.style.gridTemplateColumns = 'minmax(12rem, 16rem) repeat(' + P.data.length + ', minmax(30px, 1fr)) minmax(44px, auto)';
+    g.appendChild(el('div', 'c th rl', ''));
+    P.data.forEach(p => { const h = el('div', 'c th' + (S.id === p.id ? ' on' : '')); const b = el('button', S.id === p.id ? 'is-on' : '', p.short); b.type = 'button'; b.addEventListener('click', () => open(p.id, true)); h.appendChild(b); g.appendChild(h); });
+    g.appendChild(el('div', 'c th', 'Count'));
+    const use = new Map(U.data.map(u => [u.tactic, u.companies]));
+    [...new Set(T.data.map(t => t.group))].forEach(grp => {
+      g.appendChild(el('div', 'grp', grp));
+      T.data.filter(t => t.group === grp).forEach(t => {
+        g.appendChild(el('div', 'c rl', t.label));
+        P.data.forEach(p => { const yes = Number(p[t.tactic]) === 1; const c = el('div', 'c' + (S.id === p.id ? ' on' : '')); const d = el('span', 'tp-mdot' + (yes ? '' : ' off')); if (yes) d.style.background = dash.colors[0]; d.setAttribute('aria-label', p.short + (yes ? ' uses ' : ' does not use ') + t.label); c.appendChild(d); g.appendChild(c); });
+        g.appendChild(el('div', 'c', String(use.get(t.tactic))));
+      });
+    });
+    box.appendChild(g);
+  }
+
+  function header(Sm) {
+    ['companies', 'countries', 'with_revenue'].forEach(f => { const e = document.querySelector('.tp-lead [data-field="' + f + '"]'); e.textContent = Sm.status === 'ok' && Sm.data[0] ? String(Sm.data[0][f]) : '—'; });
+  }
+
+  function render() {
+    const P = dash.data('tp_profiles'), T = dash.data('tp_tactics');
+    header(dash.data('tp_summary'));
+    cards(P); loc(dash.data('tp_by_country')); rev(P); chips(P); profile(P, T); matrix(P, T, dash.data('tp_tactic_use'));
+  }
+  dash.onData(render);
+})();
+</script>
+</body></html>
